@@ -192,7 +192,7 @@ function normalizeContact(obj, filename) {
   };
 
   const email = cleanEmail(get('email', 'email'));
-  const telefone = cleanPhone(get('telefone', 'phone', 'fone', 'tel'));
+  const telefone = cleanPhone(get('telefone', 'phone', 'fone', 'tel', 'contato'));
   const nome = (get('nome', 'name') || '').trim();
 
   return {
